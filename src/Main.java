@@ -100,12 +100,12 @@ public class Main extends Application {
 
             int  days  = (int) Math.abs(praegu - siis);
 
-            if (1 > days && days <= 84) {
+            if (days > 1 && days <= 84) {
 
                 Label esimenetri = new Label("Käimas on I trimester.");
                 System.out.println("I trimester");
 
-            } else if (84 < days && days < 189) {
+            } else if (days > 84 && days < 189) {
 
                 Label teinetri = new Label("Käimas on II trimester.");
                 System.out.println("II trimester");
@@ -117,7 +117,7 @@ public class Main extends Application {
             }
 
 
-            // System.out.println("Teine aken töötab, jess!");
+            System.out.println("Teine aken töötab, jess!");
 
             VBox lopp = new VBox();
             lopp.setSpacing(10);
